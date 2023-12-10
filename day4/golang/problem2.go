@@ -26,7 +26,7 @@ func problemTwo(input []string) int {
 		gameNum++
 		for _, numStr := range filteredResult {
 			if contains(winningNums, numStr) {
-				if freq[gameNum] >= 1 {
+				if freq[i+1] >= 1 {
 					count := freq[i+1]
 					for k := 0; k < count; k++ {
 						freq[gameNum]++

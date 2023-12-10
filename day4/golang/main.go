@@ -39,24 +39,22 @@ func main() {
 	input := readFileToStrArray("input.txt", "\n")
 	test := readFileToStrArray("test.txt", "\n")
 
-	// test1 := problemOne(test)
-	// answer1 := problemOne(input)
+	test1 := problemOne(test)
+	answer1 := problemOne(input)
 	test2 := problemTwo(test)
 	answer2 := problemTwo(input)
 
 	fmt.Println()
 
 	// PROBLEM 1:
-	// fmt.Printf("Test 1: passed:{%v}, value:{%v} \n", test1 == 13, test1)
-	// fmt.Printf("Answer 1: passed:{%v}, value:{%v} \n", answer1 == 0, answer1)
-	// fmt.Printf("Answer 1: {%v} \n", answer1)
+	fmt.Printf("Test 1: passed:{%v}, value:{%v} \n", test1 == 13, test1)
+	fmt.Printf("Answer 1: passed:{%v}, value:{%v} \n", answer1 == 33950, answer1)
 
-	// fmt.Println()
+	fmt.Println()
 
-	// // PROBLEM 2:
+	// PROBLEM 2:
 	fmt.Printf("Test 2: passed:{%v}, value:{%v} \n", test2 == 30, test2)
-	// fmt.Printf("Answer 2: passed:{%v}, value:{%v} \n", answer2 == 76504829, answer2)
-	fmt.Printf("Answer 2: {%v} \n", answer2)
+	fmt.Printf("Answer 2: passed:{%v}, value:{%v} \n", answer2 == 14814534, answer2)
 
-	// fmt.Println()
+	fmt.Println()
 }
