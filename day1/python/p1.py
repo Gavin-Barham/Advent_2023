@@ -1,2 +1,2 @@
-def problem_one(txt):
-    return txt
+def problem_one(lines: []str):
+    return lines
